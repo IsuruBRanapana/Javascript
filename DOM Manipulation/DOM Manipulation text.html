@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Add user name and password and check it</title>
+        <script type="text/javascript">
+            function CheckCorrection(){
+                var usr=document.getElementById("Username").value;
+                var pw=document.getElementById("Password").value;     
+                if(pw=='Isuru'){
+                    alert("Your User Name is "+usr+". You can log in");
+                }else{
+                    alert("Your Password is wrong");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input id="Username" placeholder="User Name">
+        <br>
+        <br>
+        <input type="password" id="Password" placeholder="Password">
+        <br>
+        <br>
+        <button onclick="CheckCorrection()" id="Check" >Click Me</button>
+    </body>
+</html>
