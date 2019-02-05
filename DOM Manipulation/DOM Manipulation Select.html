@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>DOM Manipulation Select Box</title>
+        <script>
+            function fn1(){
+                var sel = document.getElementById("SelectBox");
+                alert(sel.options[sel.selectedIndex].value);
+            }
+        </script>
+    </head>
+    <body>
+        <select id="SelectBox">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Ferari">Ferari</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="fn1()" id="btn1">Select Me</button>
+    </body>
+</html>
