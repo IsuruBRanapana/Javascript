@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>DOM Manipulation onMouseOver and onMouseOut</title>
+        <script>
+            function setNewImage(){
+                document.getElementById("img1").src="Activities2.jpg";
+            }
+            function setOldImage(){
+                document.getElementById("img1").src="Activities1.jpg";
+            }
+            
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Activities1.jpg"/>
+    </body>
+</html>
