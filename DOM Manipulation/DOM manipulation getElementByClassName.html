@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>DOM Manipulation getElementByClassName</title>
+        <script>
+            function fn(){
+                var cn1=document.getElementsByClassName("cn");
+                for(var i=0;i<cn1.length;i++){
+                    cn1[i].style.fontSize=22;
+                    cn1[i].style.color="red";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p class="cn">This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p class="cn">This is paragraph 3</p>
+        <p>This is paragraph 4</p>
+        <p>This is paragraph 5</p>
+        <p>This is paragraph 6</p>
+        <br>
+        <br>
+        <a href="#" class="cn">This is anchor tag</a>
+        <br>
+        <br>
+        <button onclick="fn()" id="btn1">Click me</button>
+    </body>
+</html>
