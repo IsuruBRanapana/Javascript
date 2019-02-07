@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <script type="text/javascript">
+            function formValidation(){
+                var Username=document.getElementById("uname");
+                var Password=document.getElementById("pword");
+
+                    //trim() used to escape spaces
+                if(Username.value.trim()==""||Password.value.trim()==""){
+                    alert("All fields must be filled");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return formValidation()" action="Form Validation1 support.html"> 
+            <input id="uname" placeholder="Username" type="text"/>
+            <br>
+            <br>
+            <input id="pword" placeholder="Password" type="password"/>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
