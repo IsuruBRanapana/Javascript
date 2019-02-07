@@ -7,15 +7,25 @@
                 var Password=document.getElementById("pword");
                 if(Username.value.trim()=="" && Password.value.trim()==""){
                     alert("Username and Password both are blank");
+                    Username.style.border="solid 3px red";
+                    document.getElementById("lbl1").style.visibility="visible";
+                    Password.style.border="solid 3px red";
+                    document.getElementById("lbl2").style.visibility="visible";
                     return false;
                 }else if(Username.value.trim()==""){
                     alert("Blank Username");
+                    Username.style.border="solid 3px red";
+                    document.getElementById("lbl1").style.visibility="visible";
                     return false;
                 }else if(Password.value.trim()==""){
                     alert("Blank Password");
+                    Password.style.border="solid 3px red";
+                    document.getElementById("lbl2").style.visibility="visible";
                     return false;
                 }else if(Password.value.trim().length<5){
                     alert("Password is too short");
+                    Password.style.border="solid 3px red";
+                    document.getElementById("lbl2").style.visibility="visible";
                     return false;
                 }else{
                     return true;
@@ -27,12 +37,14 @@
     <body>
         <form onsubmit="return validation1()" action="Form Validation2 support.html">
             <input id="uname" type="text" placeholder="Username"/>
+            <label id="lbl1" style="color:red; visibility:hidden;">Invalid</label>
             <br>
             <br>
             <input id="pword" type="password" placeholder="Password"/>
+            <label id="lbl2" style="color:red; visibility:hidden;">Invalid</label>
             <br>
             <br>
             <button type="submit">Submit</button>
         </form>
     </body>
-</html>
+</html> 
