@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Regular Expression 2</title>
+        <script>
+            function validate(){
+                var Username=document.getElementById("uname").value;
+                var regx=/[a-x]abc/;
+                if(regx.test(Username)){
+                    alert("valid username");
+                }else{
+                    alert("Invalid Username");
+                    document.getElementById("lbl1").style.visibility="visible";
+                }
+            }
+            function validate1(){
+                var Username1=document.getElementById("uname1").value;
+                var regx=/[^a-x]abc/;
+                if(regx.test(Username1)){
+                    alert("valid username");
+                }else{
+                    alert("Invalid Username");
+                    document.getElementById("lbl2").style.visibility="visible";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="uname" placeholder="Username">
+            <br>
+            <label id="lbl1" style="color:red;visibility:hidden">Invalid Username</label>
+            <br>
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+        <form>
+            <input type="text" id="uname1" placeholder="Username">
+            <br>
+            <label id="lbl2" style="color:red;visibility:hidden">Invalid Username</label>
+            <br>
+            <button type="button" onclick="validate1()">Submit</button>
+        </form>
+    </body>
+</html>
