@@ -4,7 +4,7 @@
         <script>
             function validate(){
                 var Mobile=document.getElementById("mobinum").value;
-                var regx=/[0][7][0-9]{8}/;
+                var regx=/^[0][7][0-9]{8}$/;
                 if(regx.test(Mobile)){
                     document.getElementById("lbl1").style.color="green";
                     document.getElementById("lbl1").innerHTML="Valid";

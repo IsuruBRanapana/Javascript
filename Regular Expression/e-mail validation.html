@@ -4,11 +4,15 @@
         <script>
             function validate(){
                 var Mail=document.getElementById("email").value;
-                var regx=/^([a-z A-Z 0-9 \. -])@([a-z A-Z 0-9 -]).([a-z]{2,10})$/
-                if(regx.test(Mobile)){
-                    
+                var regx=/^([a-z A-Z 0-9 \. -]+)@([a-z A-Z 0-9 -]+).([a-z]{2,10})$/
+                if(regx.test(Mail)){
+                    document.getElementById("lbl1").style.color="green";
+                    document.getElementById("lbl1").innerHTML="Valid";
+                    document.getElementById("lbl1").style.visibility="visible";
                 }else{
-                    
+                    document.getElementById("lbl1").innerHTML="Invalid";
+                    document.getElementById("lbl1").style.color="red";
+                    document.getElementById("lbl1").style.visibility="visible";
                 }
             }
         </script>
