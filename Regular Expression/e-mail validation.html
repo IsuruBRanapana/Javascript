@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>e-mail validation</title>
+        <script>
+            function validate(){
+                var Mail=document.getElementById("email").value;
+                var regx=/^([a-z A-Z 0-9 \. -])@([a-z A-Z 0-9 -]).([a-z]{2,10})$/
+                if(regx.test(Mobile)){
+                    
+                }else{
+                    
+                }
+            }
+        </script>
+    </head>
+    <html>
+            <form>
+                <input type="text" id="email" placeholder="E-mail">
+                <br>
+                <label id="lbl1" style="color:red; visibility:hidden">Invalid</label>
+                <br>
+                <button type="button" onclick="validate()">Submit</button>
+            </form>
+    </html>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Mobile Number</title>
+        <script>
+            function validate(){
+                var Mobile=document.getElementById("mobinum").value;
+                var regx=/[0][7][0-9]{8}/;
+                if(regx.test(Mobile)){
+                    document.getElementById("lbl1").style.color="green";
+                    document.getElementById("lbl1").innerHTML="Valid";
+                    document.getElementById("lbl1").style.visibility="visible";
+                }else{
+                    document.getElementById("lbl1").innerHTML="Invalid";
+                    document.getElementById("lbl1").style.color="red";
+                    document.getElementById("lbl1").style.visibility="visible";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="mobinum" placeholder="Mobile Number">
+            <br>
+            <label id="lbl1" style="color:red; visibility:hidden">Invalid</label>
+            <br>
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+    </body>
+</html>
