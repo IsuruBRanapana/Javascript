@@ -4,7 +4,7 @@
         <script>
             function validate(){
                 var Mail=document.getElementById("email").value;
-                var regx=/^([a-z A-Z 0-9 \. -]+)@([a-z A-Z 0-9 -]+).([a-z]{2,10})$/
+                var regx=/^([a-z A-Z 0-9 \. -]+)@([a-z A-Z 0-9 -]+)\.([a-z]{2,10})$/
                 if(regx.test(Mail)){
                     document.getElementById("lbl1").style.color="green";
                     document.getElementById("lbl1").innerHTML="Valid";
@@ -17,13 +17,13 @@
             }
         </script>
     </head>
-    <html>
-            <form>
-                <input type="text" id="email" placeholder="E-mail">
-                <br>
-                <label id="lbl1" style="color:red; visibility:hidden">Invalid</label>
-                <br>
-                <button type="button" onclick="validate()">Submit</button>
-            </form>
-    </html>
+    <body>
+        <form>
+            <input type="text" id="email" placeholder="E-mail">
+            <br>
+            <label id="lbl1" style="color:red; visibility:hidden">Invalid</label>
+            <br>
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+    </body>
 </html>
