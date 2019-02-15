@@ -2,18 +2,8 @@
     <head>
         <title>Timing functions</title>
         <script>
-            var ID1=0;
             var Seconds=0;
             var ID2=0;
-            function changeH(){
-                document.getElementById("hh1").innerHTML="5 Seconds passed";
-            }
-            function Start1(){
-                ID=window.setTimeout(changeH,5000);
-            }
-            function Stop1(){
-                window.clearTimeout(ID1);
-            }
             function changeF(){
                 document.getElementById("hh2").innerHTML=Seconds+" Sec";
                 Seconds++;
@@ -27,14 +17,6 @@
         </script>
     </head>
     <body>
-        <button id="btn1" onclick="Start1()">Start1</button>
-        <br>
-        <h1 id="hh1">No Count</h1>
-        <br>
-        <button id="btn2" onclick="Stop1()">Stop1</button>
-        <br>
-        <br>
-        <br>
         <button id="btn3" onclick="Start2()">Start2</button>
         <br>
         <h1 id="hh2">No Count</h1>
