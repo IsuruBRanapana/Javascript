@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Fade in And Fade out function</title>
+        <script>
+            var opocity=0;
+            var ID=0;
+            function FadeIn(){
+                ID=setInterval(Hide,200);
+            }
+            function Hide(){
+                var img1=document.getElementById("image1");
+                opocity=Number(window.getComputedStyle(img1).getPropertyValue("opacity"));
+                if(opocity>0){
+                    opocity=opocity-0.1;
+                    img1.style.opacity=opocity;
+                } else{
+                    clearInterval(ID);
+                }
+            }
+
+            function FadeOut(){
+                ID=setInterval(Show,200);
+            }
+            function Show(){
+                var img1=document.getElementById("image1");
+                opocity=Number(window.getComputedStyle(img1).getPropertyValue("opacity"));
+                if(opocity<1){
+                    opocity=opocity+0.1;
+                    img1.style.opacity=opocity;
+                }else{
+                    clearInterval(ID);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button id="fadein" onclick="FadeIn()">Fade In</button>
+        <br>
+        <img id="image1" src="Activities1.jpg" width="400px">
+        <br>
+        <button id="fadeout" onclick="FadeOut()">Fade Out</button>
+    </body>
+</html>
