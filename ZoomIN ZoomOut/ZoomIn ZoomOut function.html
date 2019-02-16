@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Zoom In Zoom Out Function</title>
+        <script type="text/javascript">
+            var ID=0;
+            var width=100;
+            var pre=2;
+            function ZoomIn(){
+                ID=setInterval(Increase,20);
+            }
+            function Increase(){
+                if(width<200){
+                    width=width+pre;
+                    document.getElementById("img1").style.width=width;
+                }else{
+                    clearInterval(ID);
+                }
+            }
+            function ZoomOut(){
+                ID=setInterval(Decrease,20);
+            }
+            function Decrease(){
+                if(width>100){
+                    width=width-pre;
+                    document.getElementById("img1").style.width=width
+                }else{
+                    clearInterval(ID);
+                }
+            }
+        </script>
+    </head>
+    <img src="Heart.png" width="100" id="img1" onmouseover="ZoomIn()" onmouseout="ZoomOut()">
+</html>
