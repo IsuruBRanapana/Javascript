@@ -6,6 +6,7 @@
             var width=100;
             var pre=2;
             function ZoomIn(){
+                clearInterval(ID);
                 ID=setInterval(Increase,20);
             }
             function Increase(){
@@ -17,6 +18,7 @@
                 }
             }
             function ZoomOut(){
+                clearInterval(ID);
                 ID=setInterval(Decrease,20);
             }
             function Decrease(){
