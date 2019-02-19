@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/Selectors.css">
+    <script src="JQuery.js"></script>
+</head>
+<body>
+    <h1 class="hh1" id="head1">This is one</h1>
+    <h1>This is two</h1>
+    <h1 class="hh1">This is three</h1>
+    <button id="btn1" onclick="fn1()">Click Me</button>
+    <button id="btn2" onclick="fn2()">Hide One</button>
+    <button id="btn3" onclick="fn3()">Hide One and Three</button>
+</body>
+<script>
+    function fn1(){
+        $("h1").fadeToggle(3000);
+    }
+    function fn2(){
+        $("#head1").fadeToggle(3000);
+    }
+    function fn3(){
+        $(".hh1").fadeToggle(3000);
+    }
+    
+    
+</script>
+</html>
