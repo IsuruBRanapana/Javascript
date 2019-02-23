@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Selectors 2</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/Selectors.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <h1>This is Heading 1</h1>
+        <div id="firstID" class="myDivs">
+            <p>This is first para in first div</p>
+        </div>
+        <div id="secondID" class="myDivs">
+            <p>This is first para in first div</p>
+        </div>
+        <div id="thirdID" class="myDivs">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <button id="btn1" onclick="fn1()">Click Me</button>
+        <button id="btn2" onclick="fn2()">Hide p even</button>
+        <button id="btn3" onclick="fn3()">li</button>
+    </body>
+    <script>
+        function fn1(){
+            $("#firstID,#secondID").fadeToggle(3000);
+        }
+        function fn2(){
+            $("p:even").fadeToggle(3000);
+        }
+        function fn3(){
+            $("li:even").fadeToggle(3000);
+        }
+    </script>
+</html>
