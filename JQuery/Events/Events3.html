@@ -6,12 +6,14 @@
     </head>
     <body>
         <button id="btn1">Click me</button>
+        <button id="btn2">Hover</button>
         <h1 id="head1">This Is heading</h1>
     </body>
     <script>
         $(document).ready(function(){
             $("#btn1").mouseenter(fn1);
             $("#btn1").mouseleave(fn2);
+            $("btn2").hover(fn1,fn2);
             function fn1(){
                 $("#head1").fadeout();
             }
