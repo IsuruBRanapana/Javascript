@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Events 6</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/Selectors.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <h1 id="head1">This is JQuery</h1>
+        <p>This is paragraph</p>
+        <button id="btn1">Click me 1</button>
+        <button id="btn2">Click me 2</button>
+        <button id="btn3">Click me 3</button> 
+        <div id="firstDiv" class="myDivs">
+            <p>this is first para in first div</p>
+            <p>this is second para in first div</p>
+        </div>
+        <div id="secondDiv" class="myDivs">
+            <p>This is first para in second div</p>
+        </div>
+        <div id="thirdDiv" class="myDivs">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#firstDiv").slideUp(2000);
+            });
+            $("#btn2").click(function(){
+                $("#firstDiv").slideDown(2000);
+            });
+            $("#btn3").click(function(){
+                $("#firstDiv").slideToggle(2000);
+            });
+        })
+    </script>
+</html>
