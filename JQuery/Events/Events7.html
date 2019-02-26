@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Events 6</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/Selectors.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <button id="btn1">Click me 1</button>
+        <div id="cube">
+            <p style="height: 50px; width: 50px; background-color: blueviolet; opacity: 0.9; position: absolute;padding: 20px;">Cube</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#cube").animate({
+                    left:'150px',
+                    opacity: '1',
+                    width:'100px',
+                    height:'100px'
+                },3000)
+            });
+        });
+    </script>
+</html>
