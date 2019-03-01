@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>CallBack function</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/Selectors.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <button id="btn1">Click me 1</button>
+        <div id="first" class="myDivs">
+            <p>This is first para</p>
+            <p>This is second para</p>
+            <p>This is third para</p>
+            <p>This is forth para</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#first").fadeToggle(3000,function(){
+                    alert("FadeToggle is working");
+                });
+            });
+        });
+    </script>
+</html>
