@@ -7,6 +7,7 @@
     <body>
         <button id="btn1">Click me 1</button>
         <button id="btn2">Click me 2</button>
+        <button id="btn3">Click me 3</button> 
         <div id="first" class="myDivs">
             <p>This is first para</p>
             <p>This is second para</p>
@@ -24,7 +25,11 @@
             $("#btn2").click(function(){
                 $("#first").fadeToggle(3000,PrintMsg);
             });
+            $("#btn3").click(function(){
+                $("#first").slideUp(3000).slideDown(3000).fadeOut(3000).fadeIn(3000);
+            });
         });
+            
 
         function PrintMsg(){
             alert("Fade toggling done..");

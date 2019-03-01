@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>DOM </title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSS1.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <button id="btn1">Click Me 1</button><!--text()-->
+        <div id="first" class="Div1">
+            <p id="para1">This is the first para</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                var abc=$("#para1").text();
+                alert(abc);
+            });
+        });
+    </script>
+</html>
