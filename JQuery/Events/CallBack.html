@@ -6,6 +6,7 @@
     </head>
     <body>
         <button id="btn1">Click me 1</button>
+        <button id="btn2">Click me 2</button>
         <div id="first" class="myDivs">
             <p>This is first para</p>
             <p>This is second para</p>
@@ -20,6 +21,13 @@
                     alert("FadeToggle is working");
                 });
             });
+            $("#btn2").click(function(){
+                $("#first").fadeToggle(3000,PrintMsg);
+            });
         });
+
+        function PrintMsg(){
+            alert("Fade toggling done..");
+        }
     </script>
 </html>
