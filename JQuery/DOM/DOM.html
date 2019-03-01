@@ -6,6 +6,7 @@
     </head>
     <body>
         <button id="btn1">Click Me 1</button><!--text()-->
+        <button id="btn2">Click Me 2</button><!--text()-->
         <div id="first" class="Div1">
             <p id="para1">This is the first para</p>
         </div>
@@ -15,6 +16,11 @@
             $("#btn1").click(function(){
                 var abc=$("#para1").text();
                 alert(abc);
+            });
+        });
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#para1").text("Hello World");
             });
         });
     </script>
