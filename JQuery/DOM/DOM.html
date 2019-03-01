@@ -7,8 +7,9 @@
     <body>
         <button id="btn1">Click Me 1</button><!--text()-->
         <button id="btn2">Click Me 2</button><!--text()-->
+        <button id="btn3">Click Me 3</button><!--html()-->
         <div id="first" class="Div1">
-            <p id="para1">This is the first para</p>
+            <p id="para1">This is the <b>first</b> para</p>
         </div>
     </body>
     <script>
@@ -21,6 +22,9 @@
         $(document).ready(function(){
             $("#btn2").click(function(){
                 $("#para1").text("Hello World");
+            });
+            $("#btn3").click(function(){
+                alert(("#para1").html());
             });
         });
     </script>
