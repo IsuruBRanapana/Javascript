@@ -8,8 +8,9 @@
         <button id="btn1">Click Me 1</button><!--text()-->
         <button id="btn2">Click Me 2</button><!--text()-->
         <button id="btn3">Click Me 3</button><!--html()-->
+        <button id="btn4">Click Me 4</button><!--attr()-->
         <div id="first" class="Div1">
-            <p id="para1">This is the <b>first</b> para</p>
+            <p id="para1" value="Hello World">This is the <b>first</b> para</p>
         </div>
     </body>
     <script>
@@ -25,6 +26,9 @@
             });
             $("#btn3").click(function(){
                 $("#para1").html("This is the <b>second</b> para");
+            });
+            $("#btn4").click(function(){
+                alert($("#para1").attr("value"));
             });
         });
     </script>
