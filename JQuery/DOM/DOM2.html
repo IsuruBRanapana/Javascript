@@ -5,8 +5,11 @@
         <script src="JQuery.js"></script>
     </head>
     <body>
-        <button id="btn1">Set value</button><!--text()-->
-        <button id="btn2">Get value</button><!--text()-->
+        <button id="btn1">Set value</button>
+        <button id="btn2">Get value</button>
+        <button id="btn3">Set CSS value</button>
+        <button id="btn4">Get CSS value</button>
+        
         <div id="first" class="Div1">
             <p id="para1" value="Hello World">This is the <b>first</b> para</p>
         </div>
@@ -18,6 +21,12 @@
             });
             $("#btn2").click(function(){
                 alert($("#para1").attr("value"));
+            });
+            $("#btn3").click(function(){
+                $("#para1").css("font-size","25px");
+            });
+            $("#btn4").click(function(){
+                alert($("#para1").css("font-size"));
             });
         });
     </script>

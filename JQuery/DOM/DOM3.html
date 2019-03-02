@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>DOM </title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSS1.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <button id="btn1">Append</button><!--append()-->
+        <button id="btn2">After</button><!--after()-->
+        <button id="btn3">Prepend</button><!--prepend()-->
+        <button id="btn4">Before</button><!--before()-->
+        <button id="btn5">Remove</button><!--remove()-->
+        <button id="btn6">Empty</button><!--empty()-->
+
+        <div id="first" class="Div1">
+            <p id="para1" value="Hello World">This is the <b>first</b> para</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#first").append("<p> This is the <i>second</i> Para");
+            });
+            $("#btn2").click(function(){
+                $("#first").after("<p> This is the <i>second</i> Para");
+            });
+            $("#btn3").click(function(){
+                $("#first").prepend("<p> This is the <i>second</i> Para");
+            });
+            $("#btn4").click(function(){
+                $("#first").before("<p> This is the <i>second</i> Para");
+            });
+            $("#btn5").click(function(){
+                $("#first").remove();
+            });
+            $("#btn6").click(function(){
+                $("#first").empty();
+            });
+        });
+    </script>
+</html>
