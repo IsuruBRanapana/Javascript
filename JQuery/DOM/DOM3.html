@@ -11,9 +11,11 @@
         <button id="btn4">Before</button><!--before()-->
         <button id="btn5">Remove</button><!--remove()-->
         <button id="btn6">Empty</button><!--empty()-->
+        <button id="btn7">Remove selected</button><!--remove()-->
 
         <div id="first" class="Div1">
             <p id="para1" value="Hello World">This is the <b>first</b> para</p>
+            <p id="para2">This is the <b>second</b> para</p>
         </div>
     </body>
     <script>
@@ -35,6 +37,9 @@
             });
             $("#btn6").click(function(){
                 $("#first").empty();
+            });
+            $("#btn7").click(function(){
+                $("p").remove("#para2");
             });
         });
     </script>
