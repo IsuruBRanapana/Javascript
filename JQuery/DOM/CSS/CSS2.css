@@ -1,0 +1,15 @@
+.myDiv{
+    border: solid blue 2px;
+    padding: 10px;
+    color: brown;
+    margin: 20px;
+}
+
+.newClass{
+    border: solid red 5px;
+    padding: 20px;
+    color: blue;
+    background-color: aqua;
+    margin: 50px;
+    border-radius: 5px;
+}

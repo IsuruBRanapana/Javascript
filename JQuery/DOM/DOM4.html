@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>DOM </title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSS2.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <button id="btn1">Add class</button><!--addclass()-->
+        <button id="btn2">Remove class</button><!--removeclass()-->
+        <button id="btn3">Toggle class</button><!--toggleclass()-->
+        <button id="btn4">CSS</button><!--css()-->
+        <div id="first" class="myDiv">
+            <p id="para1">This is the <b>first</b> para</p>
+            <p id="para2">This is the <b>second</b> para</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#first").addClass("newClass");
+            });
+            $("#btn2").click(function(){
+                $("#first").removeClass("newClass");
+            });
+        });
+    </script>
+</html>
