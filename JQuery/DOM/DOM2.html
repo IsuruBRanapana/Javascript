@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>DOM </title>
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/CSS1.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <button id="btn1">Set value</button><!--text()-->
+        <button id="btn2">Get value</button><!--text()-->
+        <div id="first" class="Div1">
+            <p id="para1" value="Hello World">This is the <b>first</b> para</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#para1").attr("value","HI Babies");
+            });
+            $("#btn2").click(function(){
+                alert($("#para1").attr("value"));
+            });
+        });
+    </script>
+</html>
